@@ -10,15 +10,15 @@ public class MovieService
 {
     @Autowired
     MovieRepository movieRepository;
-    public void addMovie (Movie movie) {movieRepository.saveMovie(movie);}
+    public void addMovie (Movie movie) {movieRepository.saveMovies(movie);}
 
     public void addDirector (Director director) { movieRepository.saveDirector(director); }
 
     public void addDirectorCreatMovie (String movie, String director) {
-        movieRepository.saveMovieDirectorPair(movie,director);
+        movieRepository.saveDirectorMoviePair(movie,director);
     }
 
-    public Movie getMovies (String movie) {return movieRepository.findMovie(movie);}
+    public Movie getMovies (String movie) {return movieRepository.findMovies(movie);}
 
     public Director getDirectors (String director) {return movieRepository.findDirector(director);}
 
