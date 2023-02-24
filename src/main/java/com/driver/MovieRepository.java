@@ -225,7 +225,7 @@ public class MovieRepository {
         HashSet<String> moviesSet = new HashSet<String>();
 
         //Deleting the director's map
-        directorMap = new HashMap<>();
+        //directorMap = new HashMap<>();
 
         //Finding out all the movies by all the directors combined
         for(String director: directorMovieMapping.keySet()){
@@ -243,7 +243,7 @@ public class MovieRepository {
             }
         }
         //clearing the pair.
-        directorMovieMapping = new HashMap<>();
+        //directorMovieMapping = new HashMap<>();
     }
 }
 
