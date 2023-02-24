@@ -106,11 +106,14 @@ public class MovieRepository
 
     }
 
+    /**
+     * Delete all director with his Movies !!
+     */
     public void deleteAllDirector()
     {
         HashSet<String> movieSet = new HashSet<>();
 
-        ////Finding out all the movies by all the directors combined
+        // Finding out all the movies by all the directors combined
         for (String director : directorMovieMap.keySet())
         {
             //Iterating in the list of movies by a director.
